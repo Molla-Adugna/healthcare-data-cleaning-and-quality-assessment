@@ -178,7 +178,85 @@ print("\nRisk percentage distribution:")
 print((df['Risk'].value_counts() / len(df) * 100).round(2))
 ```
 Example output Screenshot:  
-## Step 3: Detect outliers using statistical methods
+## Step 3: Detect outliers using statistical methods  
+I used the two most common statistical methods to detect outliers:  
+### Interquartile Range (IQR) method
+- **Formula**: IQR = Q3 − Q1 (difference between 75th and 25th percentiles)
+- **Outlier definition**: Values below Q1 − 1.5 × IQR or above Q3 + 1.5 × IQR
+- **Best for**: Non-normally distributed data (robust against skewness)
+
+### Z-Score method
+- **Formula**: Z = (Value − Mean) / Standard Deviation
+- **Outlier definition**: |Z-score| > 3 (more than 3 standard deviations from mean)
+- **Best for**: Normally distributed data
+ ```python
+# Function to detect outliers using IQR method
+def iqr_outliers(series):
+    """
+    Detect outliers using the Interquartile Range (IQR) method.
+
+    Parameters:
+    series: pandas Series - numeric column to check for outliers
+
+    Returns:
+    pandas Series - containing only the outlier values
+    """
+    q1 = series.quantile(0.25)  # 25th percentile
+    q3 = series.quantile(0.75)  # 75th percentile
+    iqr = q3 - q1                # Interquartile range
+    lower_bound = q1 - 1.5 * iqr
+    upper_bound = q3 + 1.5 * iqr
+    return series[(series < lower_bound) | (series > upper_bound)]
+
+# Detect outliers in Age
+print("Age outliers (IQR method):")
+age_outliers = iqr_outliers(df['Age'].dropna())
+print(f"Found {len(age_outliers)} outliers in Age")
+print(f"Outlier values: {age_outliers.unique()}")
 
 
+# Detect outliers in Glucose
+print("\nGlucose outliers (IQR method):")
+glucose_outliers = iqr_outliers(df['Glucose_mg_dL'].dropna())
+print(f"Found {len(glucose_outliers)} outliers in Glucose_mg_dL")
+if len(glucose_outliers) > 0:
+    print(f"Outlier values: {glucose_outliers.unique()}")
+```
 
+## Step 4: Create a clean copy and remove PII
+
+Privacy protection is paramount in healthcare data. **Personally Identifiable Information (PII)** includes any data that can directly or indirectly identify an individual. Common PII in healthcare includes:
+
+- **Direct identifiers**: Patient names, email addresses, phone numbers, addresses
+- **Semi-identifiers**: Patient IDs (can be kept if properly anonymized)
+- **Sensitive dates**: Birth dates, exact diagnosis dates (often generalized)
+
+Regulations like **HIPAA** (USA) and **GDPR** (Europe) require removing or anonymizing PII before data analysis or sharing.
+
+I'll create a copy of the original data (to preserve the raw data) and remove PII columns.  
+  ```python
+# Create a working copy - keep original data untouched for reference
+df_clean = df.copy()
+print("Working copy created. Original data preserved.")
+```
+Example output Screenshot:  
+  ```python
+# Identify and remove PII columns
+pii_columns = ['Patient_Name', 'EmailID']
+print(f"Removing PII columns: {pii_columns}")
+
+df_clean = df_clean.drop(columns=pii_columns, errors='ignore')
+
+print("\nColumns after removing PII:")
+print(df_clean.columns.tolist())
+print(f"\nReduced from {len(df.columns)} to {len(df_clean.columns)} columns")
+```
+Example output Screenshot:  
+## Step 5: Remove duplicate rows
+
+Duplicate records can occur due to data entry errors, system glitches, or merging datasets. They can:
+- Bias analysis by overrepresenting certain patients
+- Inflate dataset size artificially
+- Cause data leakage in train-test splits
+
+I'll identify and remove exact duplicate rows, keeping only the first occurrence.
