@@ -3,54 +3,46 @@ Healthcare Data Analytics portfolio project showcasing data cleaning, privacy pr
 
 ## 🎯 Project Goal
 
-Demonstrate the ability to:  
+**_Demonstrate the ability to:_** 
 
 ## ⚙️ Set-up Working Environment:
 
-1. Install required libraries
-2. Importing required libraries
+     1. Install required libraries
+     2. Importing required libraries
 
 
-## 📝  Follow steps – Starting from loading and cleaning to saving the cleaned datasets:
+## 📝  Steps to follow – Starting from loading and cleaning to saving the cleaned datasets:
 
-Step 1. Load and explore the raw data  
+    Step 1. Load and explore the raw data  
 
-Step 2. Understand data quality issues  
+    Step 2. Understand data quality issues  
 
-Step 3. Detect outliers using statistical methods  
-1. Interquartile Range method
-2. Z-Score method  
+    Step 3. Detect outliers using statistical methods  
+            i. Interquartile Range(IQR) method 
+            ii. Z-Score method
 
-Step 4. Create a clean copy and remove PII  
+    Step 4. Create a clean copy and remove PII  
 
-Step 5. Remove duplicate rows  
+    Step 5. Remove duplicate rows  
 
-Step 6. Standardize inconsistent categorical variables  
+    Step 6. Standardize inconsistent categorical variables  
 
-Step 7. Normalize mixed units and engineer BMI feature  
+    Step 7. Normalize mixed units and engineer BMI feature  
 
-Step 8. Handle missing values with imputation  
+    Step 8. Handle missing values with imputation  
 
-Step 9. Parse dates and engineering temporal features  
+    Step 9. Parse dates and engineering temporal features  
 
-Step 10. Encode categorical variables  
+    Step 10. Encode categorical variables  
 
-Step 11. Scale numeric Features  
+    Step 11. Scale numeric Features  
 
-Step 12. Save the cleaned dataset  
+    Step 12. Save the cleaned dataset  
 
-Step 13. Evaluate data cleaning results  
+    Step 13. Evaluate data cleaning results  
 
 
-  - Clean healthcare datasets
-  - Protect patient privacy
-  - Handle missing values
-  - Remove duplicate records
-  - Standardize healthcare variables
-  - Evaluate data quality improvements
-  - Generate analytical reports
-
-  ## Project Structure
+  ## 📂 Project Structure
     healthcare-data-cleaning-and-quality-assessment/
     │
     ├── data/
@@ -79,9 +71,9 @@ Step 13. Evaluate data cleaning results
     ├── README.md
     ├── requirements.txt
     └── LICENSE  
-# 🔄 Project Workflow
+## 🔄 Project Workflow
 
-## Setup
+## ⚙️ Set-up Working Environment
 ### Installing Required Libraries
 The following Libraries are required to run this project. **Pandas** will be used for data manipulation, **NumPy** for numerical operations, **SciPy** for statistical functions and **Scikit-learn** for preprocessing utilities.  
   ```python
