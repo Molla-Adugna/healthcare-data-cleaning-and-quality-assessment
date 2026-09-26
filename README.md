@@ -1,17 +1,17 @@
 # 🏥 healthcare-data-cleaning-and-quality-assessment
 Healthcare Data Analytics portfolio project showcasing data cleaning, privacy protection, missing value treatment, categorical standardization and data quality evaluation.  
 
-# 🎯 Project Goal
+## 🎯 Project Goal
 
 Demonstrate the ability to:  
 
-**⚙️ Set-up Working Environment: **  
+## ⚙️ Set-up Working Environment:
 
 1. Install required libraries
 2. Importing required libraries
 
 
-**📝  Follow steps – Starting from loading and cleaning to saving the cleaned datasets:**  
+## 📝  Follow steps – Starting from loading and cleaning to saving the cleaned datasets:
 
 Step 1. Load and explore the raw data  
 
@@ -50,7 +50,7 @@ Step 13. Evaluate data cleaning results
   - Evaluate data quality improvements
   - Generate analytical reports
 
-  # Project Structure
+  ## Project Structure
     healthcare-data-cleaning-and-quality-assessment/
     │
     ├── data/
