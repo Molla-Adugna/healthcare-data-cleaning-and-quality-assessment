@@ -43,34 +43,27 @@ Healthcare Data Analytics portfolio project showcasing data cleaning, privacy pr
 
 
   ## 📂 Project Structure
-    healthcare-data-cleaning-and-quality-assessment/
-    │
-    ├── data/
-    │ ├── raw/
-    │ │ └── patient_data.csv
-    │ │
-    │ └── cleaned/
-    │ └── patient_data_cleaned.csv
-    │
-    ├── notebooks/
-    │ └── healthcare_data_cleaning.ipynb
-    │
-    ├── reports/
-    │ ├── before_cleaning_summary.csv
-    │ ├── after_cleaning_summary.csv
-    │ └── data_quality_report.pdf
-    │
-    ├── images/
-    │ ├── workflow.png
-    │ ├── missing_values.png
-    │ └── comparison_chart.png
-    │
-    ├── src/
-    │ └── cleaning_pipeline.py
-    │
-    ├── README.md
-    ├── requirements.txt
-    └── LICENSE  
+     📦 Healthcare-Data-Cleaning-Pipeline
+     │
+     ├── 📂 datasets
+     │ ├── raw_data.csv
+     │ └── cleaned_data.csv
+     │
+     ├── 📂 notebook
+     │ └── healthcare_data_cleaning.ipynb
+     │
+     ├── 📂 reports
+     │ ├── data_quality_report.pdf
+     │ └── cleaning_summary.pdf
+     │
+     ├── 📂 images
+     │ ├── workflow.png
+     │ ├── outlier_detection.png
+     │ └── missing_value_analysis.png
+     │
+     ├── requirements.txt
+     └── README.md 
+ 
 ## 🔄 Project Workflow
 
 ## ⚙️ Set-up Working Environment
