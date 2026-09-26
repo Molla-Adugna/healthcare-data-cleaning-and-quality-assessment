@@ -18,7 +18,7 @@ Healthcare Data Analytics portfolio project showcasing data cleaning, privacy pr
     Step 2. Understand data quality issues  
 
     Step 3. Detect outliers using statistical methods  
-            i. Interquartile Range(IQR) method 
+            i. Interquartile Range (IQR) method 
             ii. Z-Score method
 
     Step 4. Create a clean copy and remove PII  
