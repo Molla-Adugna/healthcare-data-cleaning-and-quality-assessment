@@ -668,6 +668,73 @@ Now that you've completed all preprocessing steps, you'll save the cleaned datas
 - Statistical analysis
 - Sharing with team members (with PII removed)
 
+```python
+# Save cleaned dataset
+output_path = "healthcare_cleaned_data.csv"
+df_final.to_csv(output_path, index=False)
+
+print(f"✓ Cleaned dataset saved to: {output_path}")
+print(f"\nFinal dataset shape: {df_final.shape[0]} rows × {df_final.shape[1]} columns")
+print(f"Original dataset shape: {df.shape[0]} rows × {df.shape[1]} columns")
+```
+
+
+Example output Screenshot:  
+
+```python
+# Display working directory
+import os
+print(f"\nFile saved in directory: {os.getcwd()}")
+```
+
+## Step 13: Evaluate data cleaning results
+
+Let's compare the raw and cleaned datasets to verify preprocessing was successful.  
+```python
+# Compare column structures
+print("="*60)
+print("COLUMN COMPARISON")
+print("="*60)
+print(f"\nRaw data columns ({len(df.columns)}):")
+print(df.columns.tolist())
+print(f"\nCleaned data columns ({len(df_clean.columns)}):")
+print(df_clean.columns.tolist())
+print(f"\nFinal encoded data columns ({len(df_final.columns)}):")
+print(df_final.columns.tolist())
+```
+
+Example output Screenshot:  
+
+```python
+# Compare missing values
+print("\n" + "="*60)
+print("MISSING VALUES COMPARISON")
+print("="*60)
+print("\nRaw data missing values:")
+print(df.isna().sum())
+print(f"\nTotal missing values in raw data: {df.isna().sum().sum()}")
+
+print("\nCleaned data missing values:")
+print(df_clean.isna().sum())
+print(f"\nTotal missing values in cleaned data: {df_clean.isna().sum().sum()}")
+```
+Example output Screenshot:  
+```python
+# Compare categorical standardization (Gender example)
+print("\n" + "="*60)
+print("CATEGORICAL STANDARDIZATION - GENDER EXAMPLE")
+print("="*60)
+print("\nRaw Gender value counts:")
+print(df['Gender'].value_counts(dropna=False))
+
+print("\nCleaned Gender value counts:")
+print(df_clean['Gender'].value_counts(dropna=False))
+
+print(" Successfully standardized from 6 variations to 4 consistent categories!")
+```
+Example output Screenshot:  
+
+
 
 
 
