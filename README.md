@@ -1,9 +1,46 @@
-# healthcare-data-cleaning-and-quality-assessment
+# 🏥 healthcare-data-cleaning-and-quality-assessment
 Healthcare Data Analytics portfolio project showcasing data cleaning, privacy protection, missing value treatment, categorical standardization and data quality evaluation.  
 
-# Project Goal
+# 🎯 Project Goal
 
-Demonstrate the ability to:
+Demonstrate the ability to:  
+
+**⚙️ Set-up Working Environment: **  
+
+1. Install required libraries
+2. Importing required libraries
+
+
+**📝  Follow steps – Starting from loading and cleaning to saving the cleaned datasets:**  
+
+Step 1. Load and explore the raw data  
+
+Step 2. Understand data quality issues  
+
+Step 3. Detect outliers using statistical methods  
+1. Interquartile Range method
+2. Z-Score method  
+
+Step 4. Create a clean copy and remove PII  
+
+Step 5. Remove duplicate rows  
+
+Step 6. Standardize inconsistent categorical variables  
+
+Step 7. Normalize mixed units and engineer BMI feature  
+
+Step 8. Handle missing values with imputation  
+
+Step 9. Parse dates and engineering temporal features  
+
+Step 10. Encode categorical variables  
+
+Step 11. Scale numeric Features  
+
+Step 12. Save the cleaned dataset  
+
+Step 13. Evaluate data cleaning results  
+
 
   - Clean healthcare datasets
   - Protect patient privacy
@@ -42,7 +79,7 @@ Demonstrate the ability to:
     ├── README.md
     ├── requirements.txt
     └── LICENSE  
-# Project Workflow
+# 🔄 Project Workflow
 
 ## Setup
 ### Installing Required Libraries
