@@ -617,7 +617,9 @@ print("\nSample of engineered temporal features:")
 display(df_clean[['Diagnosis_Date_parsed', 'Diagnosis_Year', 'Days_Since_Diagnosis']].head(10))
 ```
 
-Example output Screenshot:  
+**_📸 Output Preview:_**  
+
+![Extract year from diagnosis date](https://github.com/Molla-Adugna/healthcare-data-cleaning-and-quality-assessment/blob/main/screen_shot_images/Referrence%20date%20for%20calculating%20since%20diagnosis.png)   
 
 ## Step 10: Encode categorical variables
 
@@ -660,14 +662,19 @@ print(f"\nNew encoded columns created: {len(df_final.columns) - len(df_clean.col
 ```
 
 
-Example output Screenshot:  
+**_📸 Output Preview:_**  
+
+![Columns before and after encoding](https://github.com/Molla-Adugna/healthcare-data-cleaning-and-quality-assessment/blob/main/screen_shot_images/Columns%20before%20and%20after%20encoding3.png)   
+
 
   ```python
 # Preview the encoded dataset
 print("Sample of encoded data:")
 display(df_final.head())
 ```
-Example output Screenshot:  
+**_📸 Output Preview:_**  
+
+![Sample of encoded data](https://github.com/Molla-Adugna/healthcare-data-cleaning-and-quality-assessment/blob/main/screen_shot_images/Sample%20of%20encoded%20data3.png)   
 
 ## Step 11: Scale numeric features
 
