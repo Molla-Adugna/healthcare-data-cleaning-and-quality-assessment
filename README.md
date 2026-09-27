@@ -110,8 +110,9 @@ from sklearn.preprocessing import StandardScaler, MinMaxScaler, OneHotEncoder
 print("All libraries imported successfully!")
 print("Ready to begin healthcare data preprocessing.")
 ```
-Example output Screenshot:  
+**_💻 Execution Results:_**  
 
+![Supress Warnings](https://github.com/Molla-Adugna/healthcare-data-cleaning-and-quality-assessment/blob/main/screen_shot_images/Importing%20required%20libraries.png)
   ## Step 1: Load and explore the raw data
   In this step, I load the healthcare dataset and perform the initial exploration to identify data quality issues. This exploration phase helps us make informed decisions about which preprocessing techniques to apply.
   ```python
