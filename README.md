@@ -76,7 +76,9 @@ The following Libraries are required to run this project. **Pandas** will be use
 %pip install scipy
 %pip install scikit-learn
 ```
-Example output Screenshot:  
+**_📦 Installation Output:_**  
+
+![Install the required libraries](https://github.com/Molla-Adugna/healthcare-data-cleaning-and-quality-assessment/blob/main/screen_shot_images/Install%20the%20libraries%20required%20for%20this%20project.png)
 ### Suppress Warnings to get a clean output.  
  ```python
 # Optional: suppress warnings for cleaner output
@@ -86,7 +88,9 @@ import warnings
 warnings.warn = warn
 warnings.filterwarnings('ignore')
 ```
-Example output Screenshot:  
+**_✅ Expected Output:_**  
+
+![Supress Warnings](https://github.com/Molla-Adugna/healthcare-data-cleaning-and-quality-assessment/blob/main/screen_shot_images/Supress%20warnings.png)
 ### Importing Required Libraries  
 Import the following libraries for data manipulation, numerical operations, regular expression pattern matching in text processing,statistical functions and preprocessing utilities:
   ```python
