@@ -547,6 +547,7 @@ print(df_clean[numeric_cols].isnull().sum())
 
 ![Check missing values before imputation](https://github.com/Molla-Adugna/healthcare-data-cleaning-and-quality-assessment/blob/main/screen_shot_images/Handle%20messing%20value%20inputation.png)  
 
+### Median imputation for numeric columns
   ```python
 # Median imputation for numeric columns
 for col in numeric_cols:
@@ -554,7 +555,9 @@ for col in numeric_cols:
     df_clean[col] = df_clean[col].fillna(median_val)
     print(f"Imputed {col} with median = {median_val}")
 ```
-Example output Screenshot:  
+**_📸 Output Preview:_**  
+
+![Median imputation for numeric columns](https://github.com/Molla-Adugna/healthcare-data-cleaning-and-quality-assessment/blob/main/screen_shot_images/Median%20Imputation%20numeric%20values.png)   
 
   ```python
 # Verify imputation
