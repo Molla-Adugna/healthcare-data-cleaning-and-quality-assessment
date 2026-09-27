@@ -484,9 +484,10 @@ display(df_clean[['Weight', 'Weight_kg']].head(10))
 ```
 **_📸 Output Preview:_**  
 
-![Normalize Mixed units and eengeener BMI feature](https://github.com/Molla-Adugna/healthcare-data-cleaning-and-quality-assessment/blob/main/screen_shot_images/Normalize%20Mixed%20units%20and%20eengeener%20BMI%20feature.png) 
+![Normalize Mixed units and eengeener BMI feature](https://github.com/Molla-Adugna/healthcare-data-cleaning-and-quality-assessment/blob/main/screen_shot_images/Normalize%20Mixed%20units%20and%20eengeener%20BMI%20feature.png)  
 
 
+### Convert height from cm to meters
   ```python
 # Convert height from cm to meters
 df_clean['Height_cm'] = pd.to_numeric(df_clean['Height_cm'], errors='coerce')
@@ -495,7 +496,9 @@ df_clean['Height_m'] = df_clean['Height_cm'] / 100.0
 print("Height converted from cm to meters")
 ```
 
-Example output Screenshot:  
+**_📸 Output Preview:_**  
+
+![height converted from cm to meters](https://github.com/Molla-Adugna/healthcare-data-cleaning-and-quality-assessment/blob/main/screen_shot_images/Height%20converted%20from%20cm%20to%20meter.png) 
   ```python
 # Convert height from cm to meters
 df_clean['Height_cm'] = pd.to_numeric(df_clean['Height_cm'], errors='coerce')
