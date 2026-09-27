@@ -386,7 +386,9 @@ df_clean['Ethnicity'] = df_clean['Ethnicity'].where(
 print("\nAfter standardization - Ethnicity unique values:")
 print(df_clean['Ethnicity'].value_counts(dropna=False))
 ```  
-Example output Screenshot:  
+**_📸 Output Preview:_**  
+
+![Standardize ethinicity column](https://github.com/Molla-Adugna/healthcare-data-cleaning-and-quality-assessment/blob/main/screen_shot_images/Standardrize%20Ethinicity%20Column.png) 
   ```python
 # Standardize Diagnosis_Code column
 print("Before standardization - Diagnosis_Code unique values:")
