@@ -145,7 +145,7 @@ print(df.dtypes)
 ![Understand data quality issues](https://github.com/Molla-Adugna/healthcare-data-cleaning-and-quality-assessment/blob/main/screen_shot_images/Understand%20data%20quality%20issues.png) 
 
 
-Check for number and percentage of Missing values per column.
+### Check for number and percentage of Missing values per column.
   ```python
 # Check for missing values
 print("\nMissing values per column:")
@@ -155,7 +155,8 @@ print((df.isnull().sum() / len(df) * 100).round(2))
 ```
 **_📸 Output Preview:_**  
 
-![Check for number and percentage of missing values per column](https://github.com/Molla-Adugna/healthcare-data-cleaning-and-quality-assessment/blob/main/screen_shot_images/check%20for%20number%20of%20duplicate%20rows.png) 
+![Check for number and percentage of missing values per column](https://github.com/Molla-Adugna/healthcare-data-cleaning-and-quality-assessment/blob/main/screen_shot_images/check%20for%20number%20of%20duplicate%20rows.png)  
+### Check for duplicate rows.
   ```python
 # Check for duplicate rows
 dup_rows = df.duplicated(keep=False)
@@ -163,8 +164,11 @@ print(f"\nNumber of duplicate rows: {dup_rows.sum()}")
 if dup_rows.any():
     display(df[dup_rows])
 ```
-Example output Screenshot:  
-Identify Inconsistent Categorical Entries  
+**_📸 Output Preview:_**  
+
+![Check for number of duplicated rows](https://github.com/Molla-Adugna/healthcare-data-cleaning-and-quality-assessment/blob/main/screen_shot_images/check%20for%20number%20of%20duplicate%20rows.png)  
+
+### Identify Inconsistent Categorical Entries  
   ```python
 # Identify inconsistent categorical entries
 print("\nUnique values in Gender column:")
