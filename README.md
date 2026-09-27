@@ -298,7 +298,9 @@ print("\nColumns after removing PII:")
 print(df_clean.columns.tolist())
 print(f"\nReduced from {len(df.columns)} to {len(df_clean.columns)} columns")
 ```
-Example output Screenshot:  
+**_📸 Output Preview:_**  
+
+![Identify and remove PII](https://github.com/Molla-Adugna/healthcare-data-cleaning-and-quality-assessment/blob/main/screen_shot_images/Identify%20and%20remove%20PII%20columns.png)  
 ## Step 5: Remove duplicate rows
 
 Duplicate records can occur due to data entry errors, system glitches, or merging datasets. They can:
