@@ -324,7 +324,9 @@ print(f"Duplicate rows found: {duplicates_before}")
 print(f"Rows after deduplication: {rows_after}")
 print(f"Rows removed: {rows_before - rows_after}")
 ```
-Example output Screenshot:  
+**_📸 Output Preview:_**  
+
+![Remove duplicate rows](https://github.com/Molla-Adugna/healthcare-data-cleaning-and-quality-assessment/blob/main/screen_shot_images/Remove%20duplicate%20rows.png)  
 ## Step 6: Standardize inconsistent categorical variables
 
 Inconsistent categorical data is common in healthcare due to:
