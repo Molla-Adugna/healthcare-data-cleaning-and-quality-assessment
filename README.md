@@ -543,7 +543,9 @@ print("Missing values before imputation:")
 numeric_cols = ['Age', 'Weight_kg', 'Height_cm', 'BMI', 'Glucose_mg_dL']
 print(df_clean[numeric_cols].isnull().sum())
 ```
-Example output Screenshot:  
+**_📸 Output Preview:_**  
+
+![Check missing values before imputation](https://github.com/Molla-Adugna/healthcare-data-cleaning-and-quality-assessment/blob/main/screen_shot_images/Handle%20messing%20value%20inputation.png)  
 
   ```python
 # Median imputation for numeric columns
