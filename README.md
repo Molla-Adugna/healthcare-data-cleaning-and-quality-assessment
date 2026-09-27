@@ -741,7 +741,9 @@ print("\nComparison of original vs scaled values:")
 comparison_cols = ['Age', 'Age_scaled', 'Glucose_mg_dL', 'Glucose_mg_dL_scaled']
 display(df_final[comparison_cols].head(10))
 ```
-Example output Screenshot:  
+**_📸 Output Preview:_**  
+
+![Comparision of original vs scaled values](https://github.com/Molla-Adugna/healthcare-data-cleaning-and-quality-assessment/blob/main/screen_shot_images/Comparision%20of%20original%20vs%20scaled%20values.png)   
 
 ## Step 12: Save the cleaned dataset
 
