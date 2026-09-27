@@ -265,7 +265,9 @@ print(f"Found {len(glucose_outliers)} outliers in Glucose_mg_dL")
 if len(glucose_outliers) > 0:
     print(f"Outlier values: {glucose_outliers.unique()}")
 ```
+**_📸 Output Preview:_**  
 
+![Detect Outliers using statistical methods](https://github.com/Molla-Adugna/healthcare-data-cleaning-and-quality-assessment/blob/main/screen_shot_images/Detect%20outliers%20using%20statistical%20methods.png)  
 ## Step 4: Create a clean copy and remove PII
 
 Privacy protection is paramount in healthcare data. **Personally Identifiable Information (PII)** includes any data that can directly or indirectly identify an individual. Common PII in healthcare includes:
@@ -282,7 +284,9 @@ I'll create a copy of the original data (to preserve the raw data) and remove PI
 df_clean = df.copy()
 print("Working copy created. Original data preserved.")
 ```
-Example output Screenshot:  
+**_📸 Output Preview:_**  
+
+![Create a clean copy and remove PII](https://github.com/Molla-Adugna/healthcare-data-cleaning-and-quality-assessment/blob/main/screen_shot_images/Create%20a%20clean%20copy%20and%20remove%20PII.png)  
   ```python
 # Identify and remove PII columns
 pii_columns = ['Patient_Name', 'EmailID']
