@@ -498,15 +498,9 @@ print("Height converted from cm to meters")
 
 **_📸 Output Preview:_**  
 
-![height converted from cm to meters](https://github.com/Molla-Adugna/healthcare-data-cleaning-and-quality-assessment/blob/main/screen_shot_images/Height%20converted%20from%20cm%20to%20meter.png) 
-  ```python
-# Convert height from cm to meters
-df_clean['Height_cm'] = pd.to_numeric(df_clean['Height_cm'], errors='coerce')
-df_clean['Height_m'] = df_clean['Height_cm'] / 100.0
+![height converted from cm to meters](https://github.com/Molla-Adugna/healthcare-data-cleaning-and-quality-assessment/blob/main/screen_shot_images/Height%20converted%20from%20cm%20to%20meter.png)  
 
-print("Height converted from cm to meters")
-```
-Example output Screenshot:  
+### Calculate BMI (Body Mass Index)
   ```python
 # Calculate BMI (Body Mass Index)
 df_clean['BMI'] = df_clean.apply(
@@ -521,7 +515,9 @@ print("\nSample of engineered features:")
 display(df_clean[['Weight', 'Weight_kg', 'Height_cm', 'Height_m', 'BMI']].head(10))
 ```
 
-Example output Screenshot:  
+**_📸 Output Preview:_**  
+
+![BMI calculated sucessfully](https://github.com/Molla-Adugna/healthcare-data-cleaning-and-quality-assessment/blob/main/screen_shot_images/Calculated%20BMI%20Successfully.png)  
 ## Step 8: Handle missing values with imputation
 
 Missing values are inevitable in healthcare data. Common causes include:
