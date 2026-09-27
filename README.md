@@ -178,7 +178,9 @@ print(df['Ethnicity'].unique())
 print("\nUnique values in Diagnosis_Code column:")
 print(df['Diagnosis_Code'].unique())
 ```
-Example output Screenshot:  
+**_📸 Output Preview:_**  
+
+![Identify inconsistent categorical entries](https://github.com/Molla-Adugna/healthcare-data-cleaning-and-quality-assessment/blob/main/screen_shot_images/Identify%20inconsistent%20categorical%20entries.png)  
 Check for Mixed unities in weight column  
   ```python
 # Identify inconsistent categorical entries
