@@ -773,6 +773,9 @@ print(f"Original dataset shape: {df.shape[0]} rows × {df.shape[1]} columns")
 import os
 print(f"\nFile saved in directory: {os.getcwd()}")
 ```
+**_📸 Output Preview:_**  
+
+![File saved in directory](https://github.com/Molla-Adugna/healthcare-data-cleaning-and-quality-assessment/blob/main/screen_shot_images/Filesaved%20in%20a%20directory.png)   
 
 ## Step 13: Evaluate data cleaning results
 
