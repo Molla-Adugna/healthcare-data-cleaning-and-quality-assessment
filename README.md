@@ -731,7 +731,9 @@ print("Scaling complete!")
 print("\nScaled features statistics (should have mean≈0, std≈1):")
 display(df_final[scaled_columns].describe())
 ```
-Example output Screenshot:  
+**_📸 Output Preview:_**  
+
+![Scaling complete](https://github.com/Molla-Adugna/healthcare-data-cleaning-and-quality-assessment/blob/main/screen_shot_images/Scaling%20complete.png)   
 
   ```python
 # Compare original vs scaled values
