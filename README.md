@@ -812,7 +812,25 @@ print(f"\nTotal missing values in cleaned data: {df_clean.isna().sum().sum()}")
 ```
 **_📸 Output Preview:_**  
 
-![Missing values comparision](https://github.com/Molla-Adugna/healthcare-data-cleaning-and-quality-assessment/blob/main/screen_shot_images/Missing%20Values%20comparision.png)   
+![Missing values comparision](https://github.com/Molla-Adugna/healthcare-data-cleaning-and-quality-assessment/blob/main/screen_shot_images/Missing%20Values%20comparision.png)  
+### Compare Statistical Summaries  
+```python
+# Compare statistical summaries
+print("\n" + "="*60)
+print("STATISTICAL SUMMARY COMPARISON")
+print("="*60)
+print("\nRaw data summary:")
+display(df.describe())
+
+print("\nCleaned data summary:")
+display(df_clean.describe())
+```
+**_📸 Output Preview:_**  
+
+![Statistical Summary comparison](https://github.com/Molla-Adugna/healthcare-data-cleaning-and-quality-assessment/blob/main/screen_shot_images/Statistical%20Summary%20compariosn.png)  
+![Cleaned data summary](https://github.com/Molla-Adugna/healthcare-data-cleaning-and-quality-assessment/blob/main/screen_shot_images/Cleaned%20data%20summary.png)  
+
+### Compare Scategorical standardization (Gender example)
 ```python
 # Compare categorical standardization (Gender example)
 print("\n" + "="*60)
