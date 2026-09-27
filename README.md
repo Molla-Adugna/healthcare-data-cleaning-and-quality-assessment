@@ -795,7 +795,7 @@ print(df_final.columns.tolist())
 
 **_📸 Output Preview:_**  
 
-![Compare column structure](https://github.com/Molla-Adugna/healthcare-data-cleaning-and-quality-assessment/blob/main/screen_shot_images/Compare%20column%20structure5.png)   
+![Compare column structure](https://github.com/Molla-Adugna/healthcare-data-cleaning-and-quality-assessment/blob/main/screen_shot_images/Compare%20column%20structure2.png)   
 
 ```python
 # Compare missing values
