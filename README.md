@@ -112,7 +112,7 @@ print("Ready to begin healthcare data preprocessing.")
 ```
 **_💻 Execution Results:_**  
 
-![Supress Warnings](https://github.com/Molla-Adugna/healthcare-data-cleaning-and-quality-assessment/blob/main/screen_shot_images/Importing%20required%20libraries.png)
+![Importing required libraries](https://github.com/Molla-Adugna/healthcare-data-cleaning-and-quality-assessment/blob/main/screen_shot_images/Importing%20required%20libraries.png)
   ## Step 1: Load and explore the raw data
   In this step, I load the healthcare dataset and perform the initial exploration to identify data quality issues. This exploration phase helps us make informed decisions about which preprocessing techniques to apply.
   ```python
@@ -123,7 +123,9 @@ df = pd.read_csv("https://foundations-of-healthcare-data-analytics-4e579d.gitlab
 print("First 5 rows of the dataset:")
 df.head()
 ```
-Example output Screenshot:  
+**_🔍 Results Snapshot:_**  
+
+![First 5 rows of the dataset](https://github.com/Molla-Adugna/healthcare-data-cleaning-and-quality-assessment/blob/main/screen_shot_images/First%205%20rows%20of%20the%20dataset.png) 
 ## Step 2: Understand data quality issues  
 Identify systematically the following most common real world healthcare dataset quality issues:  
 1. **Missing data**: Important fields left blank or null
@@ -138,7 +140,9 @@ print(f"Number of columns: {df.shape[1]}")
 print("\nColumn names and data types:")
 print(df.dtypes)
 ```
-Example output Screenshot:  
+**_📸 Output Preview:_**  
+
+![Understand data quality issues](https://github.com/Molla-Adugna/healthcare-data-cleaning-and-quality-assessment/blob/main/screen_shot_images/Understand%20data%20quality%20issues.png) 
 
 
 Check for number and percentage of Missing values per column.
@@ -149,8 +153,9 @@ print(df.isnull().sum())
 print("\nPercentage of missing values:")
 print((df.isnull().sum() / len(df) * 100).round(2))
 ```
-Example output Screenshot:  
-Check for number of duplicate rows  
+**_📸 Output Preview:_**  
+
+![Check for number and percentage of missing values per column](https://github.com/Molla-Adugna/healthcare-data-cleaning-and-quality-assessment/blob/main/screen_shot_images/check%20for%20number%20of%20duplicate%20rows.png) 
   ```python
 # Check for duplicate rows
 dup_rows = df.duplicated(keep=False)
