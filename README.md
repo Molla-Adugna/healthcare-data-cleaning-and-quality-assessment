@@ -718,7 +718,9 @@ df_final[numeric_cols_existing] = df_final[numeric_cols_existing].fillna(
 print("Verified no missing values before scaling:")
 print(df_final[numeric_cols_existing].isna().sum())
 ```
-Example output Screenshot:  
+**_📸 Output Preview:_**  
+
+![Verifying no missing values before scaling](https://github.com/Molla-Adugna/healthcare-data-cleaning-and-quality-assessment/blob/main/screen_shot_images/Verifiyed%20no%20missing%20values%20before%20scaling.png)   
   ```python
 # Apply StandardScaler
 scaler = StandardScaler()
