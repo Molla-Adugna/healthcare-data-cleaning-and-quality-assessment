@@ -201,14 +201,16 @@ display(df[['Age', 'Glucose_mg_dL']].describe())
 
 ![Statistical summary for potential outliers](https://github.com/Molla-Adugna/healthcare-data-cleaning-and-quality-assessment/blob/main/screen_shot_images/Statistical%20Summary%20for%20potensial%20outliers.png)  
 
-Check for Date Format Inconsistent  
+### Check for Date Format Inconsistent  
   ```python
 # Check date format inconsistencies
 print("\nSample of Diagnosis_Date values (showing mixed formats):")
 display(df['Diagnosis_Date'].sample(10, random_state=42))
 ```
-Example output Screenshot:  
-Check Class balance for the target variable  
+**_📸 Output Preview:_**  
+
+![Check for format inconsistancies](https://github.com/Molla-Adugna/healthcare-data-cleaning-and-quality-assessment/blob/main/screen_shot_images/Check%20for%20date%20format%20inconsistent.png)   
+### Check Class balance for the target variable  
   ```python
 # Check class balance for the target variable
 print("\nRisk value distribution:")
@@ -216,7 +218,9 @@ print(df['Risk'].value_counts())
 print("\nRisk percentage distribution:")
 print((df['Risk'].value_counts() / len(df) * 100).round(2))
 ```
-Example output Screenshot:  
+**_📸 Output Preview:_**  
+
+![Check for class balance for the target value](https://github.com/Molla-Adugna/healthcare-data-cleaning-and-quality-assessment/blob/main/screen_shot_images/Check%20for%20class%20balance%20for%20the%20target%20variables.png)  
 ## Step 3: Detect outliers using statistical methods  
 I used the two most common statistical methods to detect outliers:  
 ### Interquartile Range (IQR) method
