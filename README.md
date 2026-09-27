@@ -482,7 +482,9 @@ df_clean['Weight_kg'] = df_clean['Weight'].apply(weight_to_kg)
 print("Weight conversion examples:")
 display(df_clean[['Weight', 'Weight_kg']].head(10))
 ```
-Example output Screenshot:  
+**_📸 Output Preview:_**  
+
+![Normalize Mixed units and eengeener BMI feature](https://github.com/Molla-Adugna/healthcare-data-cleaning-and-quality-assessment/blob/main/screen_shot_images/Normalize%20Mixed%20units%20and%20eengeener%20BMI%20feature.png) 
 
 
   ```python
