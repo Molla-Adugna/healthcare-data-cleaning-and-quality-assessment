@@ -405,7 +405,9 @@ df_clean['Diagnosis_Code'] = df_clean['Diagnosis_Code'].replace({
 print("\nAfter standardization - Diagnosis_Code unique values:")
 print(df_clean['Diagnosis_Code'].value_counts(dropna=False))
 ```
-Example output Screenshot:  
+**_📸 Output Preview:_**  
+
+![Standardize diagnosis-code column](https://github.com/Molla-Adugna/healthcare-data-cleaning-and-quality-assessment/blob/main/screen_shot_images/Standardize%20Diagnosis%20Column.png) 
   ```python
 # Fill missing categorical values with 'Unknown'
 df_clean['Gender'] = df_clean['Gender'].fillna('Unknown')
@@ -421,7 +423,9 @@ print(df_clean['Ethnicity'].value_counts())
 print("\nDiagnosis_Code:")
 print(df_clean['Diagnosis_Code'].value_counts())
 ```
-Example output Screenshot:  
+**_📸 Output Preview:_**  
+
+![Fill missing categorical values with 'Unknown'](https://github.com/Molla-Adugna/healthcare-data-cleaning-and-quality-assessment/blob/main/screen_shot_images/Fill%20missing%20categorical%20values%20with%20Unknown.png) 
 ## Step 7: Normalize mixed units and engineer BMI feature
 
 Healthcare data often contains mixed measurement units due to different countries or systems using different standards (metric vs imperial). You need to:
