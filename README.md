@@ -826,7 +826,9 @@ print(df_clean['Gender'].value_counts(dropna=False))
 
 print(" Successfully standardized from 6 variations to 4 consistent categories!")
 ```
-Example output Screenshot:  
+**_📸 Output Preview:_**  
+
+![Compare Categorical standardization](https://github.com/Molla-Adugna/healthcare-data-cleaning-and-quality-assessment/blob/main/screen_shot_images/Categorical%20Standardization.png)   
 
 
 
