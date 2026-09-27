@@ -764,7 +764,9 @@ print(f"Original dataset shape: {df.shape[0]} rows × {df.shape[1]} columns")
 ```
 
 
-Example output Screenshot:  
+**_📸 Output Preview:_**  
+
+![Cleaned dataset saved](https://github.com/Molla-Adugna/healthcare-data-cleaning-and-quality-assessment/blob/main/screen_shot_images/Cleaned%20dataset%20saved.png)   
 
 ```python
 # Display working directory
