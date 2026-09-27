@@ -557,15 +557,18 @@ for col in numeric_cols:
 ```
 **_📸 Output Preview:_**  
 
-![Median imputation for numeric columns](https://github.com/Molla-Adugna/healthcare-data-cleaning-and-quality-assessment/blob/main/screen_shot_images/Median%20Imputation%20numeric%20values.png)   
+![Median imputation for numeric columns](https://github.com/Molla-Adugna/healthcare-data-cleaning-and-quality-assessment/blob/main/screen_shot_images/Median%20Imputation%20numeric%20values.png)  
 
+### Verify imputation
   ```python
 # Verify imputation
 print("\nMissing values after imputation:")
 print(df_clean[numeric_cols].isnull().sum())
 print("\nAll numeric missing values successfully imputed!")
 ```
-Example output Screenshot:  
+**_📸 Output Preview:_**  
+
+![Verify imputation](https://github.com/Molla-Adugna/healthcare-data-cleaning-and-quality-assessment/blob/main/screen_shot_images/Missing%20Values%20for%20imputation.png)    
 
 ## Step 9: Parse dates and engineer temporal features
 
