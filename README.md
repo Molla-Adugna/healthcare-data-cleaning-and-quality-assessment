@@ -153,7 +153,7 @@ print(df.isnull().sum())
 print("\nPercentage of missing values:")
 print((df.isnull().sum() / len(df) * 100).round(2))
 ```
-**_📸 Output Preview:_**  
+**_✅ Expected Output:_**  
 
 ![Check for number and percentage of missing values per column](https://github.com/Molla-Adugna/healthcare-data-cleaning-and-quality-assessment/blob/main/screen_shot_images/Check%20for%20number%20and%20percentage%20of%20Missing%20values%20per%20column.png)  
 ### Check for duplicate rows.
@@ -164,7 +164,7 @@ print(f"\nNumber of duplicate rows: {dup_rows.sum()}")
 if dup_rows.any():
     display(df[dup_rows])
 ```
-**_📸 Output Preview:_**  
+**_💻 Execution Results:_**  
 
 ![Check for number of duplicated rows](https://github.com/Molla-Adugna/healthcare-data-cleaning-and-quality-assessment/blob/main/screen_shot_images/check%20for%20number%20of%20duplicate%20rows.png)  
 
@@ -190,13 +190,16 @@ display(df['Weight'].unique())
 **_📸 Output Preview:_**  
 
 ![Check for mixed units in weight](https://github.com/Molla-Adugna/healthcare-data-cleaning-and-quality-assessment/blob/main/screen_shot_images/Check%20for%20mixed%20units%20in%20weight%20column.png)  
-Statistical Summary to Identify Potensial Outliers  
+
+### Statistical Summary to Identify Potensial Outliers  
   ```python
 # Statistical summary to identify potential outliers
 print("\nStatistical summary of numeric columns:")
 display(df[['Age', 'Glucose_mg_dL']].describe())
 ```
-Example output Screenshot:  
+**_📸 Output Preview:_**  
+
+![Statistical summary for potential outliers](https://github.com/Molla-Adugna/healthcare-data-cleaning-and-quality-assessment/blob/main/screen_shot_images/Statistical%20Summary%20for%20potensial%20outliers.png)  
 
 Check for Date Format Inconsistent  
   ```python
