@@ -366,7 +366,9 @@ df_clean['Gender'] = df_clean['Gender'].map(
 print("\nAfter standardization - Gender unique values:")
 print(df_clean['Gender'].value_counts(dropna=False))
 ```
-Example output Screenshot:  
+**_📸 Output Preview:_**  
+
+![Standardize gender column](https://github.com/Molla-Adugna/healthcare-data-cleaning-and-quality-assessment/blob/main/screen_shot_images/standardize%20%20Gender%20Column.png)  
 
   ```python
 # Standardize Ethnicity column
