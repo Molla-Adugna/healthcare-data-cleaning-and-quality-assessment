@@ -595,7 +595,9 @@ print("\nSample of original vs parsed dates:")
 display(df_clean[['Diagnosis_Date', 'Diagnosis_Date_parsed']].head(10))
 ```
 
-Example output Screenshot:  
+**_📸 Output Preview:_**  
+
+![Date parsing results](https://github.com/Molla-Adugna/healthcare-data-cleaning-and-quality-assessment/blob/main/screen_shot_images/Date%20parsing%20result.png)   
 
   ```python
 # Extract year from diagnosis date
