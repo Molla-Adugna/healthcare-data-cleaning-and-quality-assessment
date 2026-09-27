@@ -704,7 +704,9 @@ numeric_cols_existing = [col for col in numeric_cols_to_scale if col in df_final
 print(f"Scaling {len(numeric_cols_existing)} numeric features:")
 print(numeric_cols_existing)
 ```
-Example output Screenshot:  
+**_📸 Output Preview:_**  
+
+![Scaling 6 numeric features](https://github.com/Molla-Adugna/healthcare-data-cleaning-and-quality-assessment/blob/main/screen_shot_images/Scaling%206%20numeric%20figure.png)   
 
 
   ```python
