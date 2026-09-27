@@ -810,7 +810,9 @@ print("\nCleaned data missing values:")
 print(df_clean.isna().sum())
 print(f"\nTotal missing values in cleaned data: {df_clean.isna().sum().sum()}")
 ```
-Example output Screenshot:  
+**_📸 Output Preview:_**  
+
+![Missing values comparision](https://github.com/Molla-Adugna/healthcare-data-cleaning-and-quality-assessment/blob/main/screen_shot_images/Missing%20Values%20comparision.png)   
 ```python
 # Compare categorical standardization (Gender example)
 print("\n" + "="*60)
