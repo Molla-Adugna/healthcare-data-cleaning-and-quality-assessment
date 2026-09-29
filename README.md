@@ -874,8 +874,7 @@ print(" Successfully standardized from 6 variations to 4 consistent categories!"
 - [Before vs. After Comparison](#-results--impact)
 - [Repository Structure](#-project-structure)
 - [How to Run](#-how-to-run)
-- [Author](#-author)
-
+- [Author](#%E2%80%8D-author)
 ---
 
 ## 📖 Project Overview
@@ -1021,7 +1020,6 @@ outputs/
 ## 👨‍💻 Author
  
 ### Molla Adugna
- 
 *Lead Clinical Anesthetist & Data Analyst*
  
 Driven by a passion for connecting clinical expertise with data science, transforming complex healthcare data into actionable, decision-ready insights.  
