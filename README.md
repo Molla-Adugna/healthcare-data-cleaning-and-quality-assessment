@@ -949,15 +949,18 @@ flowchart TD
     G --> H[Categorical Encoding & Feature Scaling]
     H --> I[Export Clean, ML-Ready CSV]
 
-📊 Results & Impact
-Before vs. After Preprocessing
-```python
-Metric / DimensionRaw Dataset (Before)Processed Dataset (After)
-Privacy ComplianceExposed PII (Name, Email)100% De-identified
-Categorical ConsistencyMixed (M, Male, F, Female)Standardized (Male, Female)
-Measurement UnitsMixed (kg and lbs)Standardized Metric System (kg)
-Clinical DiagnosticsTypos present (ANXITY)Normalized Codes (ANX)
-Date FormatsUnparsed / Mixed StringsISO-8601 (YYYY-MM-DD)
-Derived MetricsNoneCalculated BMI & Risk Flags
-Machine Learning ReadyNo (Strings, NaNs, Raw scale)Yes (Encoded, Scaled, Clean)
 ```
+## 📊 Results & Impact
+ 
+### Before vs. After Preprocessing
+ 
+| 📌 Metric / Dimension | 🔴 Raw Dataset (Before) | 🟢 Processed Dataset (After) |
+|----------------------|-------------------------|-----------------------------|
+| Privacy Compliance | Exposed PII (`Name`, `Email`) | ✅ 100% De-identified |
+| Categorical Consistency | Mixed (`M`, `Male`, `F`, `Female`) | ✅ Standardized (`Male`, `Female`) |
+| Measurement Units | Mixed (`kg`, `lbs`) | ✅ Standardized Metric System (`kg`) |
+| Clinical Diagnostics | Typos present (`ANXITY`) | ✅ Normalized Codes (`ANX`) |
+| Date Formats | Unparsed / Mixed Strings | ✅ ISO-8601 (`YYYY-MM-DD`) |
+| Derived Metrics | None | ✅ Calculated BMI & Risk Flags |
+| Machine Learning Ready | ❌ Strings, NaNs, Raw Scale | ✅ Encoded, Scaled, Clean |
+
