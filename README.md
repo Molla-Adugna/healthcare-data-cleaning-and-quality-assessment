@@ -962,5 +962,70 @@ flowchart TD
 | Clinical Diagnostics | Typos present (`ANXITY`) | ✅ Normalized Codes (`ANX`) |
 | Date Formats | Unparsed / Mixed Strings | ✅ ISO-8601 (`YYYY-MM-DD`) |
 | Derived Metrics | None | ✅ Calculated BMI & Risk Flags |
-| Machine Learning Ready | ❌ Strings, NaNs, Raw Scale | ✅ Encoded, Scaled, Clean |
+| Machine Learning Ready | ❌ Strings, NaNs, Raw Scale | ✅ Encoded, Scaled, Clean |  
 
+
+## 📂 Project Structure
+ 
+```text
+healthcare-data-cleaning/
+├── data/
+│ ├── raw_data.csv # Original messy dataset
+│ └── cleaned_data.csv # Processed, ML-ready output
+├── notebook/
+│ └── healthcare_data_cleaning.ipynb # Step-by-step Jupyter Notebook
+├── outputs/
+│ ├── data_quality_report.xlsx # Data audit breakdown
+│ └── visualizations/ # Distribution & anomaly plots
+├── README.md # Documentation
+└── requirements.txt # Dependencies
+```
+## 🚀 How to Run
+ 
+### 1️⃣ Clone the Repository
+ 
+```bash
+git clone https://github.com/your-username/healthcare-data-cleaning.git
+cd healthcare-data-cleaning
+```
+ 
+### 2️⃣ Create a Virtual Environment & Install Dependencies
+ 
+```bash
+python -m venv venv
+ 
+# macOS / Linux
+source venv/bin/activate
+ 
+# Windows
+venv\Scripts\activate
+ 
+pip install -r requirements.txt
+```
+ 
+### 3️⃣ Launch the Jupyter Notebook
+ 
+```bash
+jupyter notebook notebook/healthcare_data_cleaning.ipynb
+```
+ 
+### 4️⃣ Review Outputs
+ 
+After execution, the project generates:
+ 
+```text
+outputs/
+├── data_quality_report.xlsx # Data quality assessment report
+└── visualizations/ # Charts, distributions, and anomaly plots
+```
+## 👨‍💻 Author
+ 
+### Molla Adugna
+ 
+*Lead Clinical Anesthetist & Data Analyst*
+ 
+Driven by a passion for connecting clinical expertise with data science, transforming complex healthcare data into actionable, decision-ready insights.  
+
+ 
+⭐ If you find this project helpful, please consider giving it a star!
+ 
