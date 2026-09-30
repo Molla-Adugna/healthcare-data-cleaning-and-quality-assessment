@@ -166,12 +166,25 @@ outputs/
 └── visualizations/ # Charts, distributions, and anomaly plots
 ```
 ## 👨‍💻 Author
- 
 ### Molla Adugna
-*Lead Clinical Anesthetist & Data Analyst*
- 
-Driven by a passion for connecting clinical expertise with data science, transforming complex healthcare data into actionable, decision-ready insights.  
+  **Lead Clinical Anesthetist & Data Analyst** 
+    
+  Driven by a passion for connecting clinical expertise with data science, transforming complex healthcare data into actionable insights.  
+  
 
+    
+
+    
+⭐ If you find this project helpful, please consider giving it a star!  
+
+
+
+
+    
+## 🌐 Connect With Me
  
-⭐ If you find this project helpful, please consider giving it a star!
+[![Portfolio](https://img.shields.io/badge/🌍_Portfolio-Visit_Website-0A66C2?style=for-the-badge)](https://mollaadugna.wixsite.com/molla-adugna-1)
  
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Molla_Adugna-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/molla-adunga/)
+[![Fiverr](https://img.shields.io/badge/Fiverr-Available_for_Work-1DBF73?style=for-the-badge&logo=fiverr&logoColor=s)](https://www.fiverr.com/molla_adugna?public_mode=true)
+
