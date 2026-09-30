@@ -77,7 +77,7 @@ This repository details an end-to-end healthcare data preprocessing and quality 
 
 Prior to statistical analysis or model training, healthcare data pipelines must strictly enforce privacy guards.  
 
-[ Raw Dataset ] ──► [ PII Inspection ] ──► [ Drop Name & Email ] ──► [ De-identified Dataset ]  
+    [ Raw Dataset ] ──► [ PII Inspection ] ──► [ Drop Name & Email ] ──► [ De-identified Dataset ]
 * **Stripped Fields:** `Patient_Name`, `EmailID`
 * **Result:** Minimizes risk of patient re-identification while preserving the statistical utility of demographic and clinical metrics.
 
