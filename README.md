@@ -12,7 +12,7 @@
 ![ML Ready](https://img.shields.io/badge/ML_Ready-FF6F00?style=for-the-badge)
 
 ---
-
+![Healthcare Data Cleaning and Quality Assessment](https://github.com/Molla-Adugna/healthcare-data-cleaning-and-quality-assessment/blob/main/images/healthcare_data_cleaning_and_quality_assesment2.png)
 ## 📌 Table of Contents
 - [Project Overview](#-project-overview)
 - [Key Objectives](#-key-objectives)
