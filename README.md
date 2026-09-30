@@ -115,17 +115,26 @@ flowchart TD
 ## 📂 Project Structure
  
 ```text
-healthcare-data-cleaning/
-├── data/
-│ ├── raw_data.csv # Original messy dataset
-│ └── cleaned_data.csv # Processed, ML-ready output
-├── notebook/
-│ └── healthcare_data_cleaning.ipynb # Step-by-step Jupyter Notebook
-├── outputs/
-│ ├── data_quality_report.xlsx # Data audit breakdown
-│ └── visualizations/ # Distribution & anomaly plots
-├── README.md # Documentation
-└── requirements.txt # Dependencies
+healthcare-data-cleaning-and-quality-assessment/
+│
+├── README.md # Project documentation
+├── requirements/ # Project dependencies
+│ └── requirements.txt
+│
+├── datasets/ # Input and processed datasets
+│ ├── raw_data.csv
+│ └── cleaned_data.csv
+│
+├── notebook/ # Data cleaning and validation notebook
+│ └── healthcare_data_cleaning_and_quality_assessment.ipynb
+│
+├── outputs/ # Analysis outputs and reports
+│ ├── data_quality_report.xlsx
+│ └── visualizations/
+│
+├── images/ # README images and visual assets
+│
+└── screen_shot_images/ # Project screenshots and results
 ```
 ## 🚀 How to Run
  
