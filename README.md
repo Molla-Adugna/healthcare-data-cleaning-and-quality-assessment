@@ -127,7 +127,7 @@ healthcare-data-cleaning-and-quality-assessment/
 │ └── cleaned_data.csv
 │
 ├── notebook/ # Data cleaning and validation notebook
-│ └── healthcare_data_cleaning_and_quality_assessment.ipynb
+│ └── healthcare-data-cleaning-and-quality-assessment_notebook.ipynb
 │
 ├── outputs/ # Analysis outputs and reports
 │ ├── data_quality_report.xlsx
