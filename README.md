@@ -13,7 +13,7 @@
 
 ---
 ![Healthcare Data Cleaning and Quality Assessment](https://github.com/Molla-Adugna/healthcare-data-cleaning-and-quality-assessment/blob/main/images/healthcare_data_cleaning_and_quality_assesment2.png)
-## 📌 Table of Contents
+### 📌 Table of Contents
 - [Project Overview](#-project-overview)
 - [Key Objectives](#-key-objectives)
 - [Dataset Architecture](#-dataset-architecture)
@@ -22,6 +22,7 @@
 - [Before vs. After Comparison](#-results--impact)
 - [Repository Structure](#-project-structure)
 - [How to Run](#-how-to-run)
+- [Summary Checklist](#-summary-checklist)
 - [Author](#%E2%80%8D-author)
 ---
 
@@ -174,6 +175,18 @@ outputs/
 ├── data_quality_report.xlsx # Data quality assessment report
 └── visualizations/ # Charts, distributions, and anomaly plots
 ```
+## ✅ Summary Checklist  
+
+**File containing required libraries**  
+ [**`requirements.txt`**](https://github.com/Molla-Adugna/healthcare-data-cleaning-and-quality-assessment/blob/main/requirements/requirements.txt)  
+ 
+**Sample output visuals**  
+[BMI Distribution](https://github.com/Molla-Adugna/healthcare-data-cleaning-and-quality-assessment/blob/main/outputs/visualizations/bmi_distribution.png?raw=true)  
+[Missing Values Heatmap](https://github.com/Molla-Adugna/healthcare-data-cleaning-and-quality-assessment/blob/main/outputs/visualizations/missing_values_heatmap.png?raw=true)  
+[Outliers Detection](https://github.com/Molla-Adugna/healthcare-data-cleaning-and-quality-assessment/blob/main/outputs/visualizations/outlier_detection.png?raw=true)  
+
+**data_quality_report.xlsx**  
+[Data Quality Report](https://github.com/Molla-Adugna/healthcare-data-cleaning-and-quality-assessment/blob/main/outputs/data_quality_report.xlsx)  
 ## 👨‍💻 Author
 ### Molla Adugna
   **Lead Clinical Anesthetist & Data Analyst** 
